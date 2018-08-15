@@ -61,4 +61,17 @@ def all_albums()
   return list.map { |alb| Album.new(alb)}
 end
 
+def Artist.find_by_id(input)
+  sql = "SELECT * FROM artists
+        WHERE
+        id = $1"
+  values=[input]
+  result = SqlRunner.run(sql, values)
+  if result == []
+    return nil
+  else
+    return result.map { |art| Artist.new(art)}
+  end
+end
+
 end
