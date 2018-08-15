@@ -18,21 +18,25 @@ artist3.save()
 
 album1 = Album.new({
   'artist_id' => artist1.id,
-  'name' => 'Dootman\'s Doots'
+  'name' => 'Dootman\'s Doots',
+  'genre' => 'Doot Metal'
 })
 album2 = Album.new({
   'artist_id' => artist2.id,
-  'name' => 'Send Bobs'
+  'name' => 'Send Bobs',
+  'genre' => 'Nu-Bob'
 })
 
 album3 = Album.new({
   'artist_id' => artist3.id,
-  'name' => 'The Bass Effect Trilogy'
+  'name' => 'The Bass Effect Trilogy',
+  'genre' => 'Classic Bioware'
 })
 
 album4 = Album.new({
   'artist_id' => artist1.id,
-  'name' => 'Dootman 2: Electric Dootaloo'
+  'name' => 'Dootman 2: Electric Dootaloo',
+  'genre' => 'Doot Metal'
   })
 
 
